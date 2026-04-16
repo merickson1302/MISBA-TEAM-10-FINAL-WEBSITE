@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#fec324",
+                    "surface-dim": "#dadadc",
+                    "tertiary-fixed": "#93f2f2",
+                    "on-surface-variant": "#5a413d",
+                    "surface-container-low": "#f3f3f6",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "surface-tint": "#b22b1d",
+                    "inverse-surface": "#2f3133",
+                    "surface-variant": "#e2e2e5",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdf9d",
+                    "on-tertiary-container": "#54b6b5",
+                    "surface-container-high": "#e8e8ea",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#ffdad4",
+                    "surface-bright": "#f9f9fc",
+                    "surface-container": "#eeeef0",
+                    "on-primary-fixed": "#410000",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#570000",
+                    "background": "#f9f9fc",
+                    "on-tertiary-fixed-variant": "#004f4f",
+                    "tertiary": "#002c2c",
+                    "on-primary-container": "#ff8371",
+                    "on-background": "#1a1c1e",
+                    "outline-variant": "#e2bfb9",
+                    "on-primary-fixed-variant": "#8f0f07",
+                    "secondary-fixed-dim": "#f8be1c",
+                    "on-secondary-fixed": "#251a00",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#004444",
+                    "tertiary-fixed-dim": "#76d6d5",
+                    "primary-container": "#800000",
+                    "on-surface": "#1a1c1e",
+                    "surface-container-highest": "#e2e2e5",
+                    "inverse-primary": "#ffb4a8",
+                    "secondary": "#785a00",
+                    "on-secondary-container": "#6e5200",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-tertiary-fixed": "#002020",
+                    "inverse-on-surface": "#f0f0f3",
+                    "surface": "#f9f9fc",
+                    "outline": "#8e706c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-text-shadow {
+            text-shadow: 0 10px 30px rgba(87, 0, 0, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none font-manrope tracking-tight font-bold text-slate-900 dark:text-slate-100 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 text-2xl" data-icon="analytics">analytics</span>
+<span class="text-xl font-black text-red-900 dark:text-red-100 tracking-tighter">MISBA</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center"><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="index.html">Home</a><a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-900 dark:border-red-400 pb-1 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="about.html">About</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="board.html">Board</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="events.html">Events</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="showcase.html">Showcase</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="join.html">Join</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="contact.html">Contact</a></nav>
+<div class="flex items-center">
+<button class="material-symbols-outlined text-red-900 dark:text-red-500 text-2xl scale-95 duration-200 ease-in-out md:hidden" id="menu-toggle">menu</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section: Editorial Header -->
+<section class="relative pt-16 pb-24 px-6 overflow-hidden bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-3/5 z-10">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-4 block font-bold">The Intellectual Pursuit</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-tertiary leading-[1.1] mb-6 tracking-tight">
+                        Bridging Business &amp; <span class="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent italic">Intelligence.</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                        The Management Information Systems Business Association (MISBA) at UMD Duluth is more than a student organization. We are the bridge between technical architecture and strategic commerce.
+                    </p>
+</div>
+<div class="w-full md:w-2/5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative transform md:rotate-3">
+<img class="w-full h-full object-cover" data-alt="Modern corporate office interior with sleek glass walls and warm ambient lighting highlighting a group of collaborative students" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmffgq5XLz3Bw2ALu0oyI_VMWuHxmnoYdIIAhcXWmxYRkSmng1uKoDz0F0TaRb78gsQnIcYFCQD_QEByx0M-Cq2llgODBdOiaCkZZtBT0bt70UxvLNEo8TqlICbZwspflU3wdp4jxsLNW9AAfheq66-Z3aWiPjJvQFnSg8RC_XjeoJLeynRS_qKzDURLF_QB8ekn_ICBOah_Qj-hvKOiBnBbKdORIx3VamUClEzzxnY9aesmgzvfuT26rfaPDoNnIiCUJKGNiP1IIy"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<!-- Overlapping element for "Data in Motion" feel -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl rounded-lg hidden md:block max-w-[200px]">
+<p class="text-primary font-bold text-sm leading-tight">Empowering the next generation of analysts since inception.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Section: The Intelligent Layer -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4 sticky top-32">
+<h2 class="font-headline text-3xl font-bold text-tertiary mb-4">Our Mission</h2>
+<div class="w-12 h-1 bg-secondary-container mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                        To foster a professional community that empowers MIS and Business Analytics majors through experiential learning, industry exposure, and peer mentorship.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline group" href="board.html">
+                        Explore the Board
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Bento Card 1: MIS -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-l-4 border-primary group hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block" data-icon="dns">dns</span>
+<h3 class="font-headline text-xl font-bold mb-3">MIS Foundations</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Focusing on the architecture of information systems. Students learn to design, implement, and manage the technical backbones that drive global enterprise operations.
+                        </p>
+</div>
+<!-- Bento Card 2: BA -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-l-4 border-tertiary group hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-4 block" data-icon="query_stats">query_stats</span>
+<h3 class="font-headline text-xl font-bold mb-3">Business Analytics</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Deciphering the story within the data. Our members apply statistical methods and predictive modeling to solve complex business challenges and drive decision-making.
+                        </p>
+</div>
+<!-- Bento Card 3: Career -->
+<div class="md:col-span-2 bg-primary-container text-white p-10 rounded-xl flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h3 class="font-headline text-2xl font-bold mb-4">The Value of Engagement</h3>
+<p class="text-on-primary-container text-lg leading-relaxed">
+                                Join a network that stretches from the North Shore to Silicon Valley. We provide the tools, the network, and the confidence to lead.
+                            </p>
+</div>
+<div class="flex-shrink-0">
+<a class="bg-white text-primary px-8 py-3 rounded-md font-bold text-sm shadow-lg hover:bg-surface-container-low transition-colors inline-flex items-center justify-center" href="join.html">Join MISBA</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Grid: High-End Iconography -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto text-center mb-16">
+<h2 class="font-headline text-4xl font-extrabold text-tertiary mb-4">Strategic Advantages</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Elevate your academic experience through professional development pillars designed for the modern economy.</p>
+</div>
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Networking -->
+<div class="flex flex-col items-center text-center p-6 transition-opacity hover:opacity-100 opacity-90">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="hub">hub</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">Global Networking</h4>
+<p class="text-sm text-on-surface-variant">Connect with alumni at Fortune 500 companies and local tech startups during our exclusive mixer events.</p>
+</div>
+<!-- Skills -->
+<div class="flex flex-col items-center text-center p-6 transition-opacity hover:opacity-100 opacity-90">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="terminal">terminal</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">Applied Skills</h4>
+<p class="text-sm text-on-surface-variant">Hands-on workshops featuring SQL, Python, Tableau, and enterprise ERP systems to bridge the classroom-industry gap.</p>
+</div>
+<!-- Growth -->
+<div class="flex flex-col items-center text-center p-6 transition-opacity hover:opacity-100 opacity-90">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="trending_up">trending_up</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">Career Velocity</h4>
+<p class="text-sm text-on-surface-variant">Access a specialized job board and receive personalized resume reviews from industry veterans.</p>
+</div>
+</div>
+</section>
+<!-- Call to Action: The Pivot -->
+<section class="py-24 px-6 relative bg-white overflow-hidden">
+<div class="max-w-screen-md mx-auto text-center relative z-10">
+<h2 class="font-headline text-4xl font-bold mb-6">Ready to Lead the Data Revolution?</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+<a class="px-10 py-4 bg-tertiary text-white rounded-md font-bold tracking-wide hover:bg-tertiary-container transition-all" href="join.html">Join MISBA Today</a>
+<a class="px-10 py-4 bg-surface-container-high text-on-surface rounded-md font-bold tracking-wide hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2" href="events.html">
+                        View Upcoming Events
+                        <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</a>
+</div>
+</div>
+<!-- Decorative Background Shape -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 px-8 font-inter text-xs text-slate-500 uppercase tracking-widest border-t border-slate-200/50 dark:border-slate-800/50">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-2">
+<span class="font-manrope font-bold text-teal-900 dark:text-teal-100 text-lg normal-case tracking-normal">MISBA - UMD Duluth</span>
+<p>© 2026 MISBA - UMD Duluth. All rights reserved.</p>
+</div>
+<div class="flex gap-8 items-center">
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-400 transition-opacity opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/mis-ba-duluth/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-400 transition-opacity opacity-80 hover:opacity-100" href="https://www.instagram.com/misbac_umd?igsh=MTRkMTVzYm5iMDFwYw==" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-400 transition-opacity opacity-80 hover:opacity-100" href="mailto:DuluthMISBA@gmail.com">DuluthMISBA@gmail.com</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation Drawer -->
+<div class="fixed inset-y-0 right-0 w-64 z-50 flex flex-col bg-slate-50 dark:bg-slate-900 shadow-2xl transition-all duration-300 ease-in-out translate-x-full rounded-r-none h-full md:hidden" id="drawer">
+<div class="p-6">
+<span class="font-manrope font-extrabold text-teal-950 dark:text-teal-50 text-sm block mb-8">Management Information Systems Business Association</span>
+<nav class="flex flex-col gap-2"><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="index.html">Home</a><a class="flex items-center gap-3 p-3 bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-100 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="about.html">About</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="board.html">Board</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="events.html">Events</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="showcase.html">Showcase</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="join.html">Join</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="contact.html">Contact</a></nav>
+</div>
+</div>
+<script id="drawerToggleScript">
+(function(){
+  const drawer = document.getElementById('drawer') || document.getElementById('mobile-drawer');
+  if (!drawer) return;
+  const menuButtons = Array.from(document.querySelectorAll('button')).filter(btn => btn.textContent.trim().includes('menu'));
+  const closeButtons = Array.from(drawer.querySelectorAll('button')).filter(btn => btn.textContent.trim().includes('close'));
+  function openDrawer(){
+    drawer.classList.remove('hidden','translate-x-full');
+  }
+  function closeDrawer(){
+    drawer.classList.add('translate-x-full');
+    if (drawer.id === 'mobile-drawer') setTimeout(() => drawer.classList.add('hidden'), 300);
+  }
+  menuButtons.forEach(btn => btn.addEventListener('click', openDrawer));
+  closeButtons.forEach(btn => btn.addEventListener('click', closeDrawer));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+})();
+</script>
+</body></html>

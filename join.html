@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#fec324",
+                    "surface-dim": "#dadadc",
+                    "tertiary-fixed": "#93f2f2",
+                    "on-surface-variant": "#5a413d",
+                    "surface-container-low": "#f3f3f6",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "surface-tint": "#b22b1d",
+                    "inverse-surface": "#2f3133",
+                    "surface-variant": "#e2e2e5",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdf9d",
+                    "on-tertiary-container": "#54b6b5",
+                    "surface-container-high": "#e8e8ea",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#ffdad4",
+                    "surface-bright": "#f9f9fc",
+                    "surface-container": "#eeeef0",
+                    "on-primary-fixed": "#410000",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#570000",
+                    "background": "#f9f9fc",
+                    "on-tertiary-fixed-variant": "#004f4f",
+                    "tertiary": "#002c2c",
+                    "on-primary-container": "#ff8371",
+                    "on-background": "#1a1c1e",
+                    "outline-variant": "#e2bfb9",
+                    "on-primary-fixed-variant": "#8f0f07",
+                    "secondary-fixed-dim": "#f8be1c",
+                    "on-secondary-fixed": "#251a00",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#004444",
+                    "tertiary-fixed-dim": "#76d6d5",
+                    "primary-container": "#800000",
+                    "on-surface": "#1a1c1e",
+                    "surface-container-highest": "#e2e2e5",
+                    "inverse-primary": "#ffb4a8",
+                    "secondary": "#785a00",
+                    "on-secondary-container": "#6e5200",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-tertiary-fixed": "#002020",
+                    "inverse-on-surface": "#f0f0f3",
+                    "surface": "#f9f9fc",
+                    "outline": "#8e706c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500" data-icon="analytics">analytics</span>
+<span class="text-xl font-black text-red-900 dark:text-red-100 tracking-tighter font-headline">MISBA</span>
+</div>
+<!-- Desktop Navigation Cluster -->
+<div class="hidden md:flex items-center gap-8"><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="index.html">Home</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="about.html">About</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="board.html">Board</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="events.html">Events</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="showcase.html">Showcase</a><a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-900 dark:border-red-400 pb-1 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="join.html">Join</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="contact.html">Contact</a></div>
+<button class="md:hidden text-red-900 dark:text-red-500" id="menu-toggle">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-screen-xl mx-auto px-6 py-12 md:py-20 overflow-x-hidden">
+<!-- Header & Proposition -->
+<section class="mb-16">
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7">
+<span class="text-[0.75rem] font-bold text-tertiary uppercase tracking-widest mb-4 block">Membership 2026</span>
+<h1 class="text-display-lg text-[3.5rem] leading-none font-headline font-extrabold tracking-tight text-primary mb-6">Elevate your <br/><span class="text-tertiary">analytical edge.</span></h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        MISBA bridges the gap between academic theory and industry practice. We provide UMD Duluth students with the technical mastery, professional networking, and business intelligence required to lead in a data-driven world.
+                    </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="bg-white rounded-xl shadow-sm p-6 flex items-center justify-center min-h-[280px] md:min-h-[360px]">
+<img alt="MISBA logo" class="w-full max-w-md h-auto object-contain mx-auto" data-alt="MISBA logo" src="assets/misba-logo.png"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary-container rounded-lg -z-10 opacity-30"></div>
+</div>
+</div>
+</section>
+<div class="grid md:grid-cols-2 gap-12 items-start">
+<!-- Join Form Section -->
+<section class="bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-sm">
+<div class="mb-8">
+<h2 class="text-2xl font-headline font-bold text-tertiary mb-2">Become a Member</h2>
+<p class="text-sm text-on-surface-variant">Submit your interest to join our community and receive updates on recruitment.</p>
+</div>
+<form action="https://formsubmit.co/DuluthMISBA@gmail.com" class="space-y-8" method="POST"><input name="_subject" type="hidden" value="MISBA Join Interest Form"/><input name="_captcha" type="hidden" value="false"/><input name="_template" type="hidden" value="table"/>
+<div class="space-y-1">
+<label class="text-[0.75rem] font-bold text-tertiary uppercase tracking-widest block">Full Name</label>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-tertiary focus:ring-0 focus:bg-surface-container-lowest transition-all px-0 py-3 text-on-surface placeholder:text-outline-variant/60" name="name" placeholder="Alex Rivers" required="required" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-[0.75rem] font-bold text-tertiary uppercase tracking-widest block">University Email</label>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-tertiary focus:ring-0 focus:bg-surface-container-lowest transition-all px-0 py-3 text-on-surface placeholder:text-outline-variant/60" name="email" placeholder="rive0123@d.umn.edu" required="required" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="text-[0.75rem] font-bold text-tertiary uppercase tracking-widest block">Academic Year</label>
+<select class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-tertiary focus:ring-0 focus:bg-surface-container-lowest transition-all px-0 py-3 text-on-surface" name="academic_year" required="required">
+<option>Freshman</option>
+<option>Sophomore</option>
+<option>Junior</option>
+<option>Senior</option>
+<option>Graduate</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-[0.75rem] font-bold text-tertiary uppercase tracking-widest block">Focus Area</label>
+<select class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-tertiary focus:ring-0 focus:bg-surface-container-lowest transition-all px-0 py-3 text-on-surface" name="focus_area" required="required">
+<option>Analytics</option>
+<option>Cybersecurity</option>
+<option>Management</option>
+<option>IT Strategy</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity flex justify-center items-center gap-2" type="submit">
+<span>Submit Interest</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</section>
+<!-- RSVP Section -->
+<div class="space-y-8">
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h2 class="text-2xl font-headline font-bold text-tertiary mb-6">Upcoming Events</h2>
+<div class="space-y-6">
+<!-- Event Item -->
+<div class="flex items-start gap-4 pb-6 border-b border-outline-variant/20 last:border-0 last:pb-0">
+<div class="bg-surface-container-lowest p-3 rounded flex flex-col items-center min-w-[64px]">
+<span class="text-xs font-bold text-tertiary">OCT</span>
+<span class="text-xl font-headline font-extrabold text-primary">14</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-on-surface text-lg">Tableau Masterclass</h3>
+<p class="text-xs text-on-surface-variant mb-3">Lab 302 • 5:00 PM</p>
+<a class="text-xs font-bold text-tertiary underline underline-offset-4 hover:text-primary transition-colors flex items-center gap-1" href="contact.html">
+                                    RSVP NOW <span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+</a>
+</div>
+</div>
+<!-- Event Item -->
+<div class="flex items-start gap-4 pb-6 border-b border-outline-variant/20 last:border-0 last:pb-0">
+<div class="bg-surface-container-lowest p-3 rounded flex flex-col items-center min-w-[64px]">
+<span class="text-xs font-bold text-tertiary">OCT</span>
+<span class="text-xl font-headline font-extrabold text-primary">21</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-on-surface text-lg">Industry Alumni Mixer</h3>
+<p class="text-xs text-on-surface-variant mb-3">Kirby Ballroom • 6:30 PM</p>
+<a class="text-xs font-bold text-tertiary underline underline-offset-4 hover:text-primary transition-colors flex items-center gap-1" href="contact.html">
+                                    RSVP NOW <span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+</a>
+</div>
+</div>
+</div>
+<a class="mt-8 block text-center text-xs font-bold text-on-surface-variant tracking-widest uppercase hover:text-tertiary transition-colors" href="events.html">
+                        View Full Calendar
+                    </a>
+</div>
+<!-- Quick Support -->
+<div class="bg-tertiary p-8 rounded-xl text-on-tertiary flex justify-between items-center group cursor-pointer">
+<div>
+<h3 class="font-headline font-bold text-lg mb-1">Questions?</h3>
+<p class="text-sm opacity-80">Connect with our outreach team today.</p>
+</div>
+<span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 px-8 mt-20">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 border-t border-slate-200/50 dark:border-slate-800/50 pt-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-manrope font-bold text-teal-900 dark:text-teal-100 text-lg">MISBA</span>
+<p class="font-inter text-xs text-slate-500 uppercase tracking-widest">© 2026 MISBA - UMD Duluth. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 transition-opacity" href="https://www.linkedin.com/in/mis-ba-duluth/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 transition-opacity" href="https://www.instagram.com/misbac_umd?igsh=MTRkMTVzYm5iMDFwYw==" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 transition-opacity" href="mailto:DuluthMISBA@gmail.com">DuluthMISBA@gmail.com</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Nav Anchor -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 glass-nav rounded-full px-6 py-3 shadow-2xl flex items-center gap-8 z-50">
+<a class="text-slate-500" href="index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="text-slate-500" href="events.html">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+</a>
+<a class="text-red-900" href="join.html">
+<span class="material-symbols-outlined" data-icon="person_add" style="font-variation-settings: 'FILL' 1;">person_add</span>
+</a>
+<a class="text-slate-500" href="contact.html">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+<div class="fixed inset-0 z-50 hidden md:hidden" id="mobile-drawer-wrap">
+<div class="absolute inset-0 bg-black/20" id="mobile-overlay"></div>
+<div class="absolute inset-y-0 right-0 w-64 bg-white shadow-2xl p-6 flex flex-col gap-3 translate-x-full transition-transform duration-300" id="mobile-drawer">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm font-semibold tracking-wide">Menu</span>
+<button class="text-slate-600" id="mobile-close" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2"><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="index.html">Home</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="about.html">About</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="board.html">Board</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="events.html">Events</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="showcase.html">Showcase</a><a class="flex items-center gap-3 p-3 bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-100 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="join.html">Join</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="contact.html">Contact</a></nav></div>
+</div>
+<script>
+(function() {
+  const toggle = document.getElementById('menu-toggle');
+  const wrap = document.getElementById('mobile-drawer-wrap');
+  const drawer = document.getElementById('mobile-drawer');
+  const closeBtn = document.getElementById('mobile-close');
+  const overlay = document.getElementById('mobile-overlay');
+  if (!toggle || !wrap || !drawer) return;
+  function openDrawer() { wrap.classList.remove('hidden'); requestAnimationFrame(() => drawer.classList.remove('translate-x-full')); }
+  function closeDrawer() { drawer.classList.add('translate-x-full'); setTimeout(() => wrap.classList.add('hidden'), 300); }
+  toggle.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (overlay) overlay.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+})();
+</script>
+</body></html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MISBA | Project Showcase &amp; Hall of Fame</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#fec324",
+                    "surface-dim": "#dadadc",
+                    "tertiary-fixed": "#93f2f2",
+                    "on-surface-variant": "#5a413d",
+                    "surface-container-low": "#f3f3f6",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "surface-tint": "#b22b1d",
+                    "inverse-surface": "#2f3133",
+                    "surface-variant": "#e2e2e5",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdf9d",
+                    "on-tertiary-container": "#54b6b5",
+                    "surface-container-high": "#e8e8ea",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#ffdad4",
+                    "surface-bright": "#f9f9fc",
+                    "surface-container": "#eeeef0",
+                    "on-primary-fixed": "#410000",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#570000",
+                    "background": "#f9f9fc",
+                    "on-tertiary-fixed-variant": "#004f4f",
+                    "tertiary": "#002c2c",
+                    "on-primary-container": "#ff8371",
+                    "on-background": "#1a1c1e",
+                    "outline-variant": "#e2bfb9",
+                    "on-primary-fixed-variant": "#8f0f07",
+                    "secondary-fixed-dim": "#f8be1c",
+                    "on-secondary-fixed": "#251a00",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#004444",
+                    "tertiary-fixed-dim": "#76d6d5",
+                    "primary-container": "#800000",
+                    "on-surface": "#1a1c1e",
+                    "surface-container-highest": "#e2e2e5",
+                    "inverse-primary": "#ffb4a8",
+                    "secondary": "#785a00",
+                    "on-secondary-container": "#6e5200",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-tertiary-fixed": "#002020",
+                    "inverse-on-surface": "#f0f0f3",
+                    "surface": "#f9f9fc",
+                    "outline": "#8e706c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #570000 0%, #800000 100%);
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        @media (prefers-color-scheme: dark) {
+            .glass-nav {
+                background-color: rgba(15, 23, 42, 0.8);
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky z-50 transition-colors duration-300">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500" data-icon="analytics">analytics</span>
+<span class="text-xl font-black text-red-900 dark:text-red-100 tracking-tighter font-headline">MISBA</span>
+</div>
+<nav class="hidden md:flex items-center gap-8"><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="index.html">Home</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="about.html">About</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="board.html">Board</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="events.html">Events</a><a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-900 dark:border-red-400 pb-1 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="showcase.html">Showcase</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="join.html">Join</a><a class="text-teal-900 dark:text-teal-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300" href="contact.html">Contact</a></nav>
+<button class="md:hidden p-2 text-slate-900 dark:text-slate-100 active:scale-95 duration-200 ease-in-out" id="menu-toggle">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="hidden md:flex items-center">
+<img alt="MISBA logo" class="h-8 w-auto" data-alt="MISBA logo" src="assets/misba-logo.png"/>
+</div>
+</div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12 py-12 md:py-24">
+<!-- Hero Section: Editorial Style -->
+<section class="mb-24 relative">
+<div class="grid md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold mb-4 block">Archive &amp; Impact</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-tertiary tracking-tight leading-none mb-6">
+                        The Showcase <span class="text-primary italic">of</span> Innovation
+                    </h1>
+<p class="text-lg text-slate-600 max-w-xl leading-relaxed">MISBA requested placeholders for past projects until official club content is ready. This gallery is structured so future boards can easily swap in real project text, images, and outcomes later.</p>
+</div>
+<div class="md:col-span-4 flex justify-end">
+<div class="surface-container-low p-8 rounded-xl flex flex-col gap-4 border-l-4 border-primary">
+<div class="text-4xl font-headline font-black text-primary">48+</div>
+<div class="text-sm font-label uppercase tracking-wider text-slate-500">Case Studies Published</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Cards Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-32">
+<!-- Project Card 1 -->
+<article class="group" id="project-1">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low transition-all duration-500 group-hover:ring-1 group-hover:ring-outline-variant/20">
+<img alt="Project image placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Project image placeholder" src="assets/project-placeholder.png"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Project Title Example</h3>
+<p class="text-slate-600 mb-6 line-clamp-3 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group-hover:text-red-700" href="#project-1">
+                    Read Case Study
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Project Card 2 -->
+<article class="group" id="project-2">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low transition-all duration-500 group-hover:ring-1 group-hover:ring-outline-variant/20">
+<img alt="Project image placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Project image placeholder" src="assets/project-placeholder.png"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Another Project Name</h3>
+<p class="text-slate-600 mb-6 line-clamp-3 leading-relaxed">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group-hover:text-red-700" href="#project-2">
+                    Read Case Study
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Project Card 3 -->
+<article class="group" id="project-3">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container-low transition-all duration-500 group-hover:ring-1 group-hover:ring-outline-variant/20">
+<img alt="Project image placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Project image placeholder" src="assets/project-placeholder.png"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Third Project Concept</h3>
+<p class="text-slate-600 mb-6 line-clamp-3 leading-relaxed">Sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group-hover:text-red-700" href="#project-3">
+                    Read Case Study
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+</section>
+<!-- Hall of Fame Layout -->
+<section class="bg-surface-container-low p-8 md:p-16 rounded-3xl mb-32">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-black text-tertiary mb-4">Hall of Fame</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<!-- Hall of Fame Entry -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border border-outline-variant/30 flex items-center justify-center text-center px-4 text-xs font-label text-on-surface-variant uppercase tracking-widest">Hall of Fame Placeholder</div>
+<div class="text-center">
+<div class="font-headline font-bold text-on-surface">Alex Rivera</div>
+<div class="text-xs font-label text-slate-500 uppercase tracking-widest mt-1">Lead Analyst, 2023</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border border-outline-variant/30 flex items-center justify-center text-center px-4 text-xs font-label text-on-surface-variant uppercase tracking-widest">Hall of Fame Placeholder</div>
+<div class="text-center">
+<div class="font-headline font-bold text-on-surface">Sarah Chen</div>
+<div class="text-xs font-label text-slate-500 uppercase tracking-widest mt-1">Project Director, 2022</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border border-outline-variant/30 flex items-center justify-center text-center px-4 text-xs font-label text-on-surface-variant uppercase tracking-widest">Hall of Fame Placeholder</div>
+<div class="text-center">
+<div class="font-headline font-bold text-on-surface">Jordan Smyth</div>
+<div class="text-xs font-label text-slate-500 uppercase tracking-widest mt-1">Tech Liaison, 2023</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border border-outline-variant/30 flex items-center justify-center text-center px-4 text-xs font-label text-on-surface-variant uppercase tracking-widest">Hall of Fame Placeholder</div>
+<div class="text-center">
+<div class="font-headline font-bold text-on-surface">Elena Vance</div>
+<div class="text-xs font-label text-slate-500 uppercase tracking-widest mt-1">Board President, 2021</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Past Events: Bento Grid Layout -->
+<section class="mb-32">
+<h2 class="text-4xl font-headline font-black text-on-surface mb-12 tracking-tight">Recent Benchmarks</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-slate-900 rounded-3xl relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110" data-alt="Wide angle shot of a large tech conference hall with blue neon lighting and a massive LED screen showing data charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLyl4SY3_gDMssB00j2reFVxpJ41rubhVu9lkC1a4EwAaJ2Zmu13LWNuqv4auDi6QLEvcKqHpjbqSo2UhjDQ5mJP9orc9jxe945cJBUWk6oYtrFqRbX_HzF9REcvt-0T16aBm8LsPwpcOlXcVxymyHZ2BWrH9x2cvQqxooA7VRhNU5zFSz1-6Qyt2hzErTcBDkrLjVLbrpwECSnYDOmhbUcgmJr6gYnt7jQCLB2dE8NVuG43B69vm02qXgeuKV-kJo8oAiAzUbdsZX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent p-8 flex flex-col justify-end">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-bold w-fit rounded-full mb-4">Flagship Event</span>
+<h4 class="text-3xl font-headline font-bold text-white mb-2">Northland Data Summit 2026</h4>
+<p class="text-slate-300 max-w-md">Attended by 200+ students and 15 Fortune 500 recruiters.</p>
+</div>
+</div>
+<div class="bg-primary rounded-3xl p-8 flex flex-col justify-between group hover:editorial-gradient transition-all duration-500">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="groups">groups</span>
+<div>
+<h4 class="text-xl font-headline font-bold text-white mb-1">Corporate Mixer</h4>
+<p class="text-primary-fixed text-sm">Target &amp; Best Buy regional IT leadership night.</p>
+</div>
+</div>
+<div class="bg-tertiary rounded-3xl p-8 flex flex-col justify-between group">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl" data-icon="bolt">bolt</span>
+<div>
+<h4 class="text-xl font-headline font-bold text-white mb-1">SQL Speedrun</h4>
+<p class="text-slate-400 text-sm">Competitive database optimization challenge.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 px-8 border-t border-slate-200/50 dark:border-slate-800/50">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-manrope font-bold text-teal-900 dark:text-teal-100 text-lg">MISBA UMD</span>
+<p class="font-inter text-xs text-slate-500 uppercase tracking-widest">© 2026 MISBA - UMD Duluth. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/mis-ba-duluth/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="https://www.instagram.com/misbac_umd?igsh=MTRkMTVzYm5iMDFwYw==" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-inter text-xs text-slate-500 uppercase tracking-widest hover:text-red-800 dark:hover:text-red-400 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="mailto:DuluthMISBA@gmail.com">DuluthMISBA@gmail.com</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 left-6 right-6 h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl rounded-2xl shadow-2xl z-50 flex items-center justify-around px-4 border border-white/20">
+<a class="flex flex-col items-center gap-1 text-slate-600 dark:text-slate-400" href="index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-label uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-900 dark:text-red-400" href="showcase.html">
+<span class="material-symbols-outlined" data-icon="folder_shared" style="font-variation-settings: 'FILL' 1;">folder_shared</span>
+<span class="text-[10px] font-label uppercase tracking-tighter font-bold">Showcase</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-600 dark:text-slate-400" href="contact.html">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-label uppercase tracking-tighter">Contact</span>
+</a>
+</div>
+<div class="fixed inset-0 z-50 hidden md:hidden" id="mobile-drawer-wrap">
+<div class="absolute inset-0 bg-black/20" id="mobile-overlay"></div>
+<div class="absolute inset-y-0 right-0 w-64 bg-white shadow-2xl p-6 flex flex-col gap-3 translate-x-full transition-transform duration-300" id="mobile-drawer">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm font-semibold tracking-wide">Menu</span>
+<button class="text-slate-600" id="mobile-close" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2"><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="index.html">Home</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="about.html">About</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="board.html">Board</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="events.html">Events</a><a class="flex items-center gap-3 p-3 bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-100 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="showcase.html">Showcase</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="join.html">Join</a><a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg mx-2 transition-all font-inter text-sm tracking-wide" href="contact.html">Contact</a></nav></div>
+</div>
+<script>
+(function() {
+  const toggle = document.getElementById('menu-toggle');
+  const wrap = document.getElementById('mobile-drawer-wrap');
+  const drawer = document.getElementById('mobile-drawer');
+  const closeBtn = document.getElementById('mobile-close');
+  const overlay = document.getElementById('mobile-overlay');
+  if (!toggle || !wrap || !drawer) return;
+  function openDrawer() { wrap.classList.remove('hidden'); requestAnimationFrame(() => drawer.classList.remove('translate-x-full')); }
+  function closeDrawer() { drawer.classList.add('translate-x-full'); setTimeout(() => wrap.classList.add('hidden'), 300); }
+  toggle.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (overlay) overlay.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+})();
+</script>
+</body></html>
